@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+
+.leader {
+	display: block;
+  margin: 2vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+  border-bottom: 2vw solid #000;
+	box-sizing: border-box;
+	font-weight: 700;
+	font-size: 7.5vw;
+	line-height: 1.1;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.video {
+	position: absolute;
+	top: 52%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+}
+
+.text_wrapper {
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+  position: relative;
+	width: 100%;
+	border-left: 10px solid #000;
+	border-right: 10px solid #000;
+}
+
+.text_mob {
+  display: none;
+}
+
+.text_des {
+  display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	white-space: nowrap;
+	margin-bottom: -3px;
+}
+
+.text_part {
+  display: inline-block;
+	position: relative;
+	height: 8.6vw;
+	background: #000;
+}
+
+.text_part__11 {
+	z-index: 11;
+}
+
+.text_part__10 {
+	z-index: 10;
+}
+
+.text_part__9 {
+	z-index: 9;
+}
+
+.text_part__8 {
+	z-index: 8;
+}
+
+.text_part__7 {
+	z-index: 7;
+}
+
+.text_part__6 {
+	z-index: 6;
+}
+
+.text_part__5 {
+	z-index: 5;
+}
+
+.text_part__4 {
+	z-index: 4;
+}
+
+.full {
+	width: 100%;
+}
+
+.overlay {
+	display: inline-block;
+	position: relative;
+  height: 8.6vw;
+  width: 100vw;
+  overflow: hidden;
+	vertical-align: middle;
+	border-top: 3vw solid #000;
+	border-bottom: 1.5vw solid #000;
+	border-left: 2vw solid #000;
+	border-right: 2vw solid #000;
+}
+
+.overlay_5 {
+  z-index: 5;
+}
+
+.overlay_6 {
+  z-index: 6;
+}
+
+.overlay_7 {
+  z-index: 7;
+	border-left: 1vw solid #000;
+}
+
+.overlay_8 {
+	z-index: 8;
+	border-right: 0vw solid #000;
+}
+
+
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    font-size: 12.6vw;
+    letter-spacing: calc(-2px + (-0.00416667 * (100vw - 320px)));
+  }
+
+  .video {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text_des {
+    display: none;
+  }
+
+  .text_mob {
+    display: flex;
+	  align-items: flex-end;
+	  justify-content: space-between;
+    position: relative;
+    width: 100%;
+	  white-space: nowrap;
+	  text-align: justify;
+    margin-bottom: -3px;
+  }
+
+  .text_part {
+    display: inline-block;
+    height: 15.5vw;
+    padding-top: 2px;
+    padding-bottom: 6px;
+    text-align: justify;
+  }
+
+  .overlay {
+    height: 15.5vw;
+    border-bottom: 2vw solid #000;
+  }
+}
